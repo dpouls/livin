@@ -2,6 +2,8 @@
   "name": "livin",
   "version": "0.1.0",
   "private": true,
+  "main": "server/index.js",
+  "proxy": "http://localhost:7001",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
@@ -11,8 +13,10 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
+    "gradient-string": "^1.2.0",
     "massive": "^6.2.0",
     "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
@@ -37,6 +41,12 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "src/*",
+      "public/*"
     ]
   }
 }
