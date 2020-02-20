@@ -1,11 +1,12 @@
 .landing-container {
-    height: 100vh;
+    // height: 100vh;
+    color: white;
 }
 
 .home__welcome-container {
     height: 100vh;
     background-image: url('../../images/mountain.jpg');
-    background-size: 100vw;
+    background-size: cover;
 }
 .home__blog-container {
     height: 100vh;
