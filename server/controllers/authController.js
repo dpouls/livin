@@ -26,7 +26,7 @@ module.exports = {
         const {session} = req
         const db = req.app.get('db')
         
-        // console.log('body', req.body)
+        console.log('body', req.body)
       
         let user = await db.user.check_user(username)
         user = user[0]
@@ -40,7 +40,7 @@ module.exports = {
             session.user = user
             res.status(202).send(session.user)
             
-            // console.log('session.user',session.user)
+            console.log('session.user',session.user)
         } else {  
             res.status(401).send("Incorrect Password")
         }
@@ -51,7 +51,7 @@ module.exports = {
         res.sendStatus(200);
     },
     currentUser: (req,res) => {
-        console.log('currentuser hit')
+        console.log(req.session.user)
         if (req.session.user){
             res.status(200).send(req.session.user)
         } else {

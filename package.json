@@ -14,6 +14,7 @@
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "gradient-string": "^1.2.0",
+    "local-storage": "^2.0.0",
     "massive": "^6.2.0",
     "node-sass": "^4.13.1",
     "nodemon": "^2.0.2",
