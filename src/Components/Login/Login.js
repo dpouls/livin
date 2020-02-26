@@ -23,6 +23,7 @@ const Login = props => {
         ls.set("id", res.data.id);
         ls.set("username", res.data.username);
         props.toggleLogin()
+        props.setLoggedIn(true)
         // props.history.push('/')
       }
       //  (res) => res.status === 202 ? props.history.push('/') : null
@@ -32,7 +33,9 @@ const Login = props => {
   return (
     <div onClick={(e) => goTo(e)}  className="login-container">
       {/* <div > */}
-      <form className="login-modal" action="">
+      <div className="login-modal">
+        <div className='login-modal__top-box'>LOGIN HERE</div>
+        <form className="login-form" action="">
         {/* <h1>{ls.get("username") || "not logged in"}</h1> */}
         <input
           className='login-input'
@@ -58,6 +61,8 @@ const Login = props => {
 
         <button className='login-button' onClick={e => handleSubmit(e)}>LOGIN</button>
       </form>
+      </div>
+      
       {/* </div> */}
     </div>
   );

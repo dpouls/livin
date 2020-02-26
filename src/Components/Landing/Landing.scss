@@ -7,22 +7,149 @@
     height: 100vh;
     background-image: url('../../images/mountain.jpg');
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-size: 100pt;
+        border: 5px solid white;
+        padding: 40px;
+    }
 }
 .home__blog-container {
     height: 100vh;
     background-image: url('../../images/mountain2.jpg');
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .blog-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 60%;
+        height: 40%;
+        h1 {
+            font-size: 3em;
+        }
+        button {
+            background-color: #E27D23; 
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            transition: ease 500ms;
+            &:hover {
+                cursor: pointer;
+                background-color: #3F3F3F;
+            }
+        }
+        
+    }
 }
-
 .home__video-container {
     height: 100vh;
     background-image: url('../../images/pines2.jpg');
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .video-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 60%;
+        height: 40%;
+        h1 {
+            font-size: 3em;
+        }
+        button {
+            background-color: #E27D23; 
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            transition: ease 500ms;
+            &:hover {
+                cursor: pointer;
+                background-color: #3F3F3F;
+            }
+        }
+        
+    }
 }
 .home__gear-container {
     height: 101vh;
     background-image: url('../../images/bowHunter.jpg');
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .gear-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 60%;
+        height: 40%;
+        h1 {
+            font-size: 3em;
+        }
+        button {
+            background-color: #E27D23; 
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            transition: ease 500ms;
+            &:hover {
+                cursor: pointer;
+                background-color: #3F3F3F;
+            }
+        }
+        
+    }
 }
+
+.home__social-container {
+    height: 101vh;
+    background-image: url('../../images/bowHunter.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .social-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 60%;
+        height: 40%;
+        h1 {
+            font-weight: bolder;
+            font-size: 3em;
+        }
+        .social-icons-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 30pt;
+            transition: ease 500ms;
+            &:hover {
+                cursor: pointer;
+                background-color: #3F3F3F;
+            }
+        }
+        
+    }
+}
+
 
 
